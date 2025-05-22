@@ -1,0 +1,68 @@
+/* Reset & base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 1%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2465a7;
+  color: #ecf0f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .profile {
+  text-align: center;
+}
+
+.sidebar .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile h2 {
+  margin: -11px 0 1px;
+  font-size: 20px;
+}
+
+.sidebar .profile p {
+  font-size: 14px;
+  color: black;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #34495e;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ecf0f1;
+  overflow-y: auto;
+}
