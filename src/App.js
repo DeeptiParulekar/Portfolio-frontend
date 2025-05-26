@@ -8,11 +8,12 @@ import './App.css';
 import ContactForm from './components/ContactForm';
 import About from './pages/About';
 import axios from 'axios';
+import Portfolio from './pages/Portfolio'; 
 
-function Portfolio() { return <h2>Portfolio Page</h2>; }
+
 function Services() { return <h2>Services & Pricing Page</h2>; }
 function Resume() { return <h2>Resume Page</h2>; }
-function More() { return <h2>Hire Me</h2>; }
+// function More() { return <h2>Hire Me</h2>; }
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -120,7 +121,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<ContactForm />} />
-            <Route path="/hire" element={<More />} />
+            <Route path="/hire" element={<ContactForm />} />
           </Routes>
         </div>
       </div>

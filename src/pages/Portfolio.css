@@ -1,0 +1,104 @@
+/* Top Section (Grey Background) */
+.portfolio-top-section {
+    background-color: #f8f7f7;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+ /* Shared container styling */
+.portfolio-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure white background for bottom section */
+.white-background {
+    background-color: #fff;
+}
+
+/* Title and Subtitle */
+.portfolio-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0e0d0d;
+}
+
+.portfolio-subtitle {
+    margin: 1rem auto;
+    max-width: 600px;
+    color: #070606;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+/* Category Tabs */
+.portfolio-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+    color: #28a745;
+    border-bottom: 2px solid #28a745;
+}
+
+/* Portfolio Grid & Card */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: row;
+    background: #f9f9f9;
+    width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.portfolio-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.portfolio-heading {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.portfolio-client {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}

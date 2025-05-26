@@ -352,3 +352,42 @@ body.dark-mode .right-section {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+
+body.dark-mode .portfolio-top-section {
+    background-color: #4b4b4b;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+body.dark-mode .portfolio-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+body.dark-mode .portfolio-subtitle {
+    margin: 1rem auto;
+    max-width: 600px;
+    color: #ffffff;
+}
+
+body.dark-mode .white-background {
+    background-color: #4b4b4b;
+}
+
+
+body.dark-mode .tab-button {
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+body.dark-mode .tab-button.active {
+    color: #ffffff;
+    border-bottom: 2px solid #28a745;
+}
