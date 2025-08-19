@@ -53,9 +53,9 @@ const About = () => {
 
           <div className="bio">
             <p>
-              {profile?.profileDescription || "I'm a software engineer specialised in frontend and backend development for complex scalable web apps."}
+              {profile?.profileDescription || "Im a software engineer specialised in frontend and backend development for complex scalable web apps."}
               Want to know how I may help your project? Check out my{' '}
-              <Link to="/portfolio" className="plain-link">project portfolio</Link> and{' '}
+              <Link to="/portfolio" className="plain-link">Project Portfolio</Link> and{' '}
               <Link to="/resume" className="plain-link">online resume</Link>.
             </p>
           </div>
@@ -92,17 +92,96 @@ const About = () => {
 
       <hr className="section-divider" />
 
-      <section className="what-i-do">
-        <h2>What I do</h2>
-        <p>
-          {profile?.whatIDo || "I have 3.6 years of experience in building software for clients all over the world."}
-        </p>
-        <div className="skills">
-          <img src="/icons/angular.svg" alt="Angular" />
-          <img src="/icons/react.svg" alt="React" />
-          <img src="/icons/java.svg" alt="Java" />
-        </div>
-      </section>
+  
+
+<section className="what-i-do">
+  <h2>What I Do</h2>
+  <p>{profile?.whatIDo || "I have 3.8 years of experience in building software for clients."}</p>
+
+  <div className="card-container">
+  <div className="info-card">
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <img 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+      alt="React" 
+      style={{ width: '40px', height: '40px' }} 
+    />
+
+      </div>
+      <div>
+        <h4>React</h4>
+        <p>I build interactive UIs using Reacts</p>
+      </div>
+    </div>
+
+
+    <div className="info-card">
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+          alt="Java"
+          style={{ width: '40px', height: '40px' }}
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+          alt="Spring Boot"
+          style={{ width: '40px', height: '40px' }}
+        />
+      </div>
+      <div>
+        <h4>Java + Spring Boot</h4>
+        <p>REST APIs and Microservices with Spring Boot.</p>
+      </div>
+    </div>
+
+      <div className="info-card">
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <img 
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
+  alt="PostgreSQL" 
+  style={{ width: '40px', height: '40px' }} 
+/>
+
+      </div>
+      <div>
+        <h4>PostgreSQL</h4>
+        <p>Database Management.</p>
+      </div>
+    </div>
+
+          <div className="info-card">
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <img 
+  src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postman.svg" 
+  alt="Postman" 
+  style={{ width: '40px', height: '40px', fill: '#FF6C37' }} 
+/>
+
+      </div>
+      <div>
+        <h4>Postman</h4>
+        <p>API Testing and Debugging</p>
+      </div>
+    </div>
+
+          <div className="info-card">
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <img 
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazonaws.svg" 
+      alt="AWS" 
+      style={{ width: '40px', height: '40px', fill: '#FF9900' }} 
+    />
+
+      </div>
+      <div>
+        <h4>AWS</h4>
+        <p>Amazaon Web Services</p>
+      </div>
+    </div>
+  </div> 
+</section>
+
+
     </div>
   );
 };

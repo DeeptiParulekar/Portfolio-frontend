@@ -102,3 +102,52 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+.portfolio-top-section {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.white-background {
+  background-color: #fff;
+  color: #333;
+}
+
+.portfolio-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #333; /* default text color */
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+.portfolio-content {
+  padding: 16px;
+  color: #333; /* default text color */
+}
+
+/* Dark mode override */
+body.dark-mode .portfolio-card,
+body.dark-mode .portfolio-content,
+body.dark-mode .portfolio-top-section,
+body.dark-mode .white-background {
+  background-color: #1e1e1e;
+  color: #f5f5f5; /* light text color for dark background */
+}
+
+body.dark-mode .tab-button {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+body.dark-mode .tab-button.active {
+  background-color: #555;
+  color: #fff;
+}

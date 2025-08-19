@@ -9,11 +9,11 @@ import ContactForm from './components/ContactForm';
 import About from './pages/About';
 import axios from 'axios';
 import Portfolio from './pages/Portfolio'; 
+import Service from './pages/Service';
 
 
-function Services() { return <h2>Services & Pricing Page</h2>; }
+// function Services() { return <h2>Services & Pricing Page</h2>; }
 function Resume() { return <h2>Resume Page</h2>; }
-// function More() { return <h2>Hire Me</h2>; }
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -77,7 +77,7 @@ function App() {
             </div>
             <h2>Deepti Parulekar</h2>
             <p>Hi, my name is Deepti Parulekar</p>
-            <p>I'm a Software Engineer</p>
+            <p>I'm a Software Engineer</p>                 
             <p>Welcome to my personal website!</p>
           </div>
 
@@ -118,7 +118,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services" element={<Service />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/hire" element={<ContactForm />} />
