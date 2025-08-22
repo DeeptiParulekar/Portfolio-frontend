@@ -62,7 +62,6 @@ const Portfolio = () => {
       </div>
 
       <div className="portfolio-container white-background">
-        {/* Category tabs */}
         <div className="portfolio-tabs">
           {categories.map(category => (
             <button

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Service.css';
@@ -23,13 +24,8 @@ const Services = () => {
     }
   };
 
-  if (loading) {
-    return <p>Loading services...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
-  }
+  if (loading) return <p className="loading">Loading services...</p>;
+  if (error) return <p className="error">{error}</p>;
 
   return (
     <div className="services-container">
@@ -37,10 +33,12 @@ const Services = () => {
       <div className="services-grid">
         {services.map(service => (
           <div key={service.serviceEntityId} className="service-card">
-            {service.iconUrl && <img src={service.iconUrl} alt={service.title} className="service-icon" />}
+            <div className="icon-wrapper">
+              {service.iconUrl && <img src={service.iconUrl} alt={service.title} className="service-icon" />}
+            </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            {service.packageInfo && <p><strong>Package:</strong> {service.packageInfo}</p>}
+            {service.packageInfo && <p className="package-info"><strong>Package:</strong> {service.packageInfo}</p>}
           </div>
         ))}
       </div>

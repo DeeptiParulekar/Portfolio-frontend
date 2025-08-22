@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaPen } from 'react-icons/fa';
 import React from 'react'
-// In JSX
+
 <FaPen />
 
 const About = () => {
@@ -80,7 +80,7 @@ const About = () => {
               <div className="placeholder-circle"></div>
             )}
 
-            {/* Edit Icon */}
+            
             <label className="edit-icon">
               <input type="file" accept="image/*" onChange={handleImageChange} style={{ display: 'none' }} />
               ✏️
