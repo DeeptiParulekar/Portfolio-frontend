@@ -10,10 +10,9 @@ import About from './pages/About';
 import axios from 'axios';
 import Portfolio from './pages/Portfolio'; 
 import Service from './pages/Service';
+import ResumePage from './pages/ResumePage';
 
-
-// function Services() { return <h2>Services & Pricing Page</h2>; }
-function Resume() { return <h2>Resume Page</h2>; }
+// function Resume() { return <h2>Resume Page</h2>; }
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -119,7 +118,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/services" element={<Service />} />
-            <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/resume" element={<Resume />} /> */}
+             <Route path="/resume" element={<ResumePage />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/hire" element={<ContactForm />} />
           </Routes>

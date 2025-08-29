@@ -1,0 +1,97 @@
+.resume-page {
+  min-height: 100vh;
+  /* background: linear-gradient(to right, #1f2937, #6b21a8, #8b5cf6); */
+      background: linear-gradient(to right, #aab4c3, #765b8d, #514962);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.resume-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.upload-download-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.upload-download-section input,
+.upload-download-section button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .upload-download-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .upload-download-section input,
+  .upload-download-section button {
+    width: auto;
+  }
+}
+
+/* .resume-card {
+  max-width: 64rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+} */
+
+.resume-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.5rem;
+}
+
+.resume-card p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list li {
+  background: rgba(139, 92, 246, 0.25);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.experience,
+.education {
+  margin-bottom: 1.5rem;
+}
+
+.experience p,
+.education p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.list-disc li {
+  margin-left: 1rem;
+}

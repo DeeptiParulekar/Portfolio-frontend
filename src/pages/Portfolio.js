@@ -56,7 +56,7 @@ const Portfolio = () => {
             Want some help building your software?
           </p>
           <button className="hire-me-btn" onClick={() => navigate('/contact')}>
-            🚀 Hire Me
+             Hire Me
           </button>
         </div>
       </div>
